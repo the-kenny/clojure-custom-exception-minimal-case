@@ -1,0 +1,76 @@
+```
+ % lein repl
+Compiling foo.FooException
+#error {
+ :cause Unable to resolve classname: FooException
+ :via
+ [{:type clojure.lang.Compiler$CompilerException
+   :message java.lang.IllegalArgumentException: Unable to resolve classname: FooException, compiling:(foo/core.clj:5:3)
+   :at [clojure.lang.Compiler analyzeSeq Compiler.java 6875]}
+  {:type java.lang.IllegalArgumentException
+   :message Unable to resolve classname: FooException
+   :at [clojure.lang.Compiler$NewExpr$Parser parse Compiler.java 2631]}]
+ :trace
+ [[clojure.lang.Compiler$NewExpr$Parser parse Compiler.java 2631]
+  [clojure.lang.Compiler analyzeSeq Compiler.java 6868]
+  [clojure.lang.Compiler analyze Compiler.java 6669]
+  [clojure.lang.Compiler analyzeSeq Compiler.java 6856]
+  [clojure.lang.Compiler analyze Compiler.java 6669]
+  [clojure.lang.Compiler analyze Compiler.java 6625]
+  [clojure.lang.Compiler$BodyExpr$Parser parse Compiler.java 6001]
+  [clojure.lang.Compiler$FnMethod parse Compiler.java 5380]
+  [clojure.lang.Compiler$FnExpr parse Compiler.java 3972]
+  [clojure.lang.Compiler analyzeSeq Compiler.java 6866]
+  [clojure.lang.Compiler analyze Compiler.java 6669]
+  [clojure.lang.Compiler analyzeSeq Compiler.java 6856]
+  [clojure.lang.Compiler analyze Compiler.java 6669]
+  [clojure.lang.Compiler access$300 Compiler.java 38]
+  [clojure.lang.Compiler$DefExpr$Parser parse Compiler.java 589]
+  [clojure.lang.Compiler analyzeSeq Compiler.java 6868]
+  [clojure.lang.Compiler analyze Compiler.java 6669]
+  [clojure.lang.Compiler analyze Compiler.java 6625]
+  [clojure.lang.Compiler eval Compiler.java 6931]
+  [clojure.lang.Compiler load Compiler.java 7379]
+  [clojure.lang.RT loadResourceScript RT.java 372]
+  [clojure.lang.RT loadResourceScript RT.java 363]
+  [clojure.lang.RT load RT.java 453]
+  [clojure.lang.RT load RT.java 419]
+  [clojure.core$load$fn__5677 invoke core.clj 5893]
+  [clojure.core$load invokeStatic core.clj 5892]
+  [clojure.core$load doInvoke core.clj 5876]
+  [clojure.lang.RestFn invoke RestFn.java 408]
+  [clojure.core$load_one invokeStatic core.clj 5697]
+  [clojure.core$load_one invoke core.clj 5692]
+  [clojure.core$load_lib$fn__5626 invoke core.clj 5737]
+  [clojure.core$load_lib invokeStatic core.clj 5736]
+  [clojure.core$load_lib doInvoke core.clj 5717]
+  [clojure.lang.RestFn applyTo RestFn.java 142]
+  [clojure.core$apply invokeStatic core.clj 648]
+  [clojure.core$load_libs invokeStatic core.clj 5774]
+  [clojure.core$load_libs doInvoke core.clj 5758]
+  [clojure.lang.RestFn applyTo RestFn.java 137]
+  [clojure.core$apply invokeStatic core.clj 648]
+  [clojure.core$require invokeStatic core.clj 5796]
+  [clojure.core$require doInvoke core.clj 5796]
+  [clojure.lang.RestFn invoke RestFn.java 408]
+  [user$eval3 invokeStatic form-init5701442001445697603.clj 1]
+  [user$eval3 invoke form-init5701442001445697603.clj 1]
+  [clojure.lang.Compiler eval Compiler.java 6927]
+  [clojure.lang.Compiler eval Compiler.java 6916]
+  [clojure.lang.Compiler eval Compiler.java 6916]
+  [clojure.lang.Compiler load Compiler.java 7379]
+  [clojure.lang.Compiler loadFile Compiler.java 7317]
+  [clojure.main$load_script invokeStatic main.clj 275]
+  [clojure.main$init_opt invokeStatic main.clj 277]
+  [clojure.main$init_opt invoke main.clj 277]
+  [clojure.main$initialize invokeStatic main.clj 308]
+  [clojure.main$null_opt invokeStatic main.clj 342]
+  [clojure.main$null_opt invoke main.clj 339]
+  [clojure.main$main invokeStatic main.clj 421]
+  [clojure.main$main doInvoke main.clj 384]
+  [clojure.lang.RestFn invoke RestFn.java 421]
+  [clojure.lang.Var invoke Var.java 383]
+  [clojure.lang.AFn applyToHelper AFn.java 156]
+  [clojure.lang.Var applyTo Var.java 700]
+  [clojure.main main main.java 37]]}
+```
